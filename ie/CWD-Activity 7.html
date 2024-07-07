@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar & Sidenav</title>
+</head>
+<body>
+    <h1 class="light-pink-text text-darken-1 center">Navbar</h1>
+     <div class="divider"></div>
+     <br>
+     <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+        
+        <h3 class="light-pink-text text-darken-1">Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+
+     <nav class="light-pink lighten-2">
+         <div class="nav-wrapper">
+            <a href="https://fontawesome.com/" class="brand-logo" target="_blank">Night
+                <i class="fa-solid fa-shield-dog"></i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://fontawesome.com/kits">Kits</a></li>
+                <li><a href="https://fontawesome.com/icons">Icons</a></li>
+                <li><a href="https://docs.fontawesome.com/">Docs</a></li>
+            </ul>
+         </div>
+     </nav>
+     <br>
+     <h3 class="light-pink-text text-darken-1">Left Aligned Links</h3>
+     <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+     <nav class="light-pink">
+         <div class="nav-wrapper">
+            <a href="https://fontawesome.com/" class="brand-logo right" target="_blank">Chloe
+                <i class="fa-solid fa-bone"></i>
+            </a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="https://fontawesome.com/kits">Kits</a></li>
+                <li><a href="https://fontawesome.com/icons">Icons</a></li>
+                <li><a href="https://docs.fontawesome.com/">Docs</a></li>
+            </ul>
+         </div>
+     </nav>
+     <br>
+     <h3 class="light-pink-text text-darken-1">Centering the logo</h3>
+     <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo"'>. You will have to make sure yourself that links do not overlap if you use this.</p>
+     <nav class="light-pink darken-2">
+         <div class="nav-wrapper">
+            <a href="https://fontawesome.com/" class="brand-logo center" target="_blank">Chealsy
+                <i class="fa-solid fa-dog"></i>
+            </a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="https://fontawesome.com/kits">Kits</a></li>
+                <li><a href="https://fontawesome.com/icons">Icons</a></li>
+                <li><a href="https://docs.fontawesome.com/">Docs</a></li>
+            </ul>
+         </div>
+     </nav>
+     <br>
+     <h3 class="light-pink-text text-darken-1">Active Items</h3>
+     <p>Add active class to your li tags to denote the current page.</p>
+     <nav class="light-pink darken-2">
+        <div class="nav-wrapper">
+           <a href="https://fontawesome.com/" class="brand-logo center" target="_blank">Choco
+            <i class="fa-solid fa-paw"></i>
+           </a>
+           <ul id="nav-mobile" class="left hide-on-med-and-down">
+               <li class="active"><a href="https://fontawesome.com/kits">Kits</a></li>
+               <li><a href="https://fontawesome.com/icons">Icons</a></li>
+               <li><a href="https://docs.fontawesome.com/">Docs</a></li>
+           </ul>
+        </div>
+     </nav>
+     <br>
+     <h3 class="light-pink-text text-darken-1">Extended Navbar with Tabs</h3>
+     <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+     <nav class="light-pink darken-2 nav-extended">
+        <div class="nav-wrapper">
+           <a href="https://fontawesome.com/" class="brand-logo center" target="_blank">Milktea
+            <i class="fa-solid fa-hotdog"></i>
+           </a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
+               <li class="active"><a href="https://fontawesome.com/kits">Kits</a></li>
+               <li><a href="https://fontawesome.com/icons">Icons</a></li>
+               <li><a href="https://docs.fontawesome.com/">Docs</a></li>
+           </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+              <li class="tab"><a href="#test1">Test 1</a></li>
+              <li class="tab"><a href="#test2">Test 2</a></li>
+              <li class="tab"><a href="#test3">Test 3</a></li>
+              <li class="tab"><a href="#test4">Test 4</a></li>
+            </ul>
+        </div>
+     </nav>
+
+     <!-- Tabs Structure -->
+     <div class="row">
+        <div class="col s12" id="test1">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/image2.jpg" alt="" class="responsive-img">
+                </div>
+            </div>
+        </div>
+        <div class="col s12" id="test2">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/image3.jpg" alt="" class="responsive-img">
+                </div>
+            </div>
+        </div>
+        <div class="col s12" id="test3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/image4.jpeg" alt="" class="responsive-img">
+                </div>
+            </div>
+        </div>
+        <div class="col s12" id="test4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/image5.jpg" alt="" class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+     </div>
+     
+     
+
+
+    <div style="height: 1000px;"></div>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/e0b5c5853d.js" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+        });
+    </script>
+
+    
+</body>
+</html>

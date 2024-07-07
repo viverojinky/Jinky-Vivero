@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Example Promotion Table</title>
+</head>
+<body>
+    <br><br><br>
+    <div class="container">
+        <p class="flow-text">Example Promotion Table</p>
+        <p>If we want 3 divs that are equal size, we define the divs with a width of 4-columns, as 4+4+4 nicely adds up to 12. Inside those divs, we can put our content. Take our front page content for example. We've modified it slightly for the sake of this example.</p>
+            <div class="row center">
+                <div class="col s4 m4">
+                    <i class="fa-solid fa-bolt-lightning large light-green-text"></i>
+                    <h5>Speeds up development</h5>
+                    <p>We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+                </div>
+                <div class="col s4 m4">
+                    <i class="fa-solid fa-user-group large light-green-text"></i>
+                    <h5>User Experience Focused</h5>
+                    <p>By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+                </div>
+                <div class="col s4 m4">
+                    <i class="fa-solid fa-gear large light-green-text"></i>
+                    <h5>Easy to work with</h5>
+                    <p>We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+    <div style="height: 1000px;"></div>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/e0b5c5853d.js" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.fixed-action-btn').floatingActionButton();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.scrollspy').scrollspy();
+        });
+    </script>
+    
+</body>
+</html>
